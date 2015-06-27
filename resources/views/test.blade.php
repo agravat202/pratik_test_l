@@ -1,6 +1,10 @@
-<html>
-    <body>
-        <h1>the test of : {{ $name }}</h1>
+@extends('header')
+
+@section('content')
+
+
+<h1>the test of :
+    @if($name == 'hola') {{ $name }} @else Hello @endif </h1>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -10,5 +14,6 @@
             sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
             software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
+    @stop
     </body>
 </html>
